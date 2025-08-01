@@ -1,13 +1,14 @@
 //import { SignedIn, SignedOut, UserButton } from "@daveyplate/better-auth-ui"
 import { Link } from '@tanstack/react-router';
 import { ModeToggle } from './mode-toggle';
+import { BookOpenText, Github } from 'lucide-react';
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/60 px-4 py-3 backdrop-blur">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="font-bold text-2xl text-foreground">
-          ex0
+          
         </Link>
 
         <nav className="flex items-center gap-6">
@@ -15,16 +16,16 @@ export function Header() {
             to="/docs"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            Docs
+            <BookOpenText size={18} />
           </Link>
           <a
-            href="https://github.com/instructa/constructa-starter-min"
+            href="https://github.com/gaojunran/WakaAura"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
           >
-            GitHub
-            <svg
+            <Github size={18} />
+            {/* <svg
               className="w-3 h-3"
               fill="none"
               stroke="currentColor"
@@ -37,7 +38,7 @@ export function Header() {
                 strokeWidth={2}
                 d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
               />
-            </svg>
+            </svg> */}
           </a>
           <ModeToggle />
           {/* <UserButton />

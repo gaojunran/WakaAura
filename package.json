@@ -11,6 +11,9 @@
     "lint": "oxlint",
     "lint:fix": "oxlint --fix"
   },
+  "overrides": {
+    "react-is": "19.1.1"
+  },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
     "@radix-ui/react-checkbox": "^1.3.2",
@@ -27,16 +30,17 @@
     "@radix-ui/react-tooltip": "^1.2.7",
     "@tanstack/react-query": "^5.80.6",
     "@tanstack/react-query-devtools": "^5.80.6",
-    "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-router": "^1.121.0-alpha.22",
     "@tanstack/react-router-devtools": "^1.121.0-alpha.22",
     "@tanstack/react-start": "^1.121.0-alpha.25",
+    "@tanstack/react-table": "^8.21.3",
     "clsx": "^2.1.1",
     "framer-motion": "^12.16.0",
     "lucide-react": "^0.513.0",
     "motion": "^12.16.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "recharts": "2.15.4",
     "sonner": "^2.0.5",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.8",
@@ -47,7 +51,6 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@napi-rs/cli": "^2.18.4",
-    "oxlint": "^1.0.0",
     "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/vite": "^4.1.8",
     "@tanstack/config": "^0.18.2",
@@ -63,6 +66,7 @@
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "dotenv": "^16.5.0",
+    "oxlint": "^1.0.0",
     "shadcn": "^2.6.1",
     "tailwindcss": "^4.1.6",
     "tw-animate-css": "^1.3.4",
