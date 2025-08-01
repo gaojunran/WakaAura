@@ -1,4 +1,3 @@
-
 <div align="center">
   <h1>Constructa Starter Min</h1>
   <p><strong>A modern Web App Starter Kit based on Tanstack Starter using React, shadcn/ui and Tailwind CSS 4</strong></p>
@@ -19,7 +18,8 @@
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js** 18+ 
+
+- **Node.js** 18+
 - **pnpm** (recommended package manager)
 
 ### Download
@@ -72,16 +72,17 @@ src/
 
 ## 🎯 Core Technologies
 
-| Technology | Purpose | Documentation |
-|------------|---------|---------------|
-| **TanStack Start** | Full-stack framework | [Docs](https://tanstack.com/start) |
-| **shadcn/ui** | Component library | [Docs](https://ui.shadcn.com/) |
-| **Tailwind CSS v4** | Styling framework | [Docs](https://tailwindcss.com/) |
-| **TypeScript** | Type safety | [Docs](https://typescriptlang.org/) |
+| Technology          | Purpose              | Documentation                       |
+| ------------------- | -------------------- | ----------------------------------- |
+| **TanStack Start**  | Full-stack framework | [Docs](https://tanstack.com/start)  |
+| **shadcn/ui**       | Component library    | [Docs](https://ui.shadcn.com/)      |
+| **Tailwind CSS v4** | Styling framework    | [Docs](https://tailwindcss.com/)    |
+| **TypeScript**      | Type safety          | [Docs](https://typescriptlang.org/) |
 
 ## 🔧 Configuration
 
 ### Adding shadcn/ui Components
+
 ```bash
 # Add new components
 npx shadcn@latest add button
@@ -90,22 +91,26 @@ npx shadcn@latest add input
 ```
 
 ### Tailwind CSS
+
 - Uses Tailwind CSS v4 with modern CSS-first configuration
 - Configured in `app.config.ts`
 - Global styles in `src/app/styles/`
 
 ### TypeScript
+
 - **Path aliases**: `@` resolves to the root `./` directory
 - **Route files**: Must use `.tsx` extension
 
 ## 🚀 Deployment
 
 ### Build for Production
+
 ```bash
 pnpm build
 ```
 
 ### Start Production Server
+
 ```bash
 pnpm start
 ```
@@ -119,5 +124,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>Built with ❤️ using modern React tools</p>
 </div>
-
-

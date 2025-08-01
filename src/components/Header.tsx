@@ -1,15 +1,13 @@
 //import { SignedIn, SignedOut, UserButton } from "@daveyplate/better-auth-ui"
-import { Link } from '@tanstack/react-router';
-import { ModeToggle } from './mode-toggle';
-import { BookOpenText, Github } from 'lucide-react';
+import { Link } from "@tanstack/react-router";
+import { ModeToggle } from "./mode-toggle";
+import { BookOpenText, Github } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/60 px-4 py-3 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b bg-background/60 px-4 py-3 backdrop-blur h-12 flex items-center">
       <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="font-bold text-2xl text-foreground">
-          
-        </Link>
+        <Link to="/" className="font-bold text-2xl text-foreground"></Link>
 
         <nav className="flex items-center gap-6">
           <Link
@@ -25,38 +23,8 @@ export function Header() {
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
           >
             <Github size={18} />
-            {/* <svg
-              className="w-3 h-3"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg> */}
           </a>
           <ModeToggle />
-          {/* <UserButton />
-
-                    <SignedOut>
-                        <Link to="/auth/$pathname" params={{ pathname: "sign-in" }}>
-                            <Button className="rounded-full bg-primary px-6 font-medium text-primary-foreground text-sm hover:bg-primary/90">
-                                Sign In <span className="ml-1">↗</span>
-                            </Button>
-                        </Link>
-                    </SignedOut>
-                    <SignedIn>
-                        <Link to="/dashboard">
-                            <Button className="rounded-full bg-primary px-6 font-medium text-primary-foreground text-sm hover:bg-primary/90">
-                                Dashboard <span className="ml-1">↗</span>
-                            </Button>
-                        </Link>
-                    </SignedIn> */}
         </nav>
       </div>
     </header>

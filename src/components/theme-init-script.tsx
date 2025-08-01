@@ -9,7 +9,7 @@
  *         <meta name="color-scheme" content="light dark"> tag exists.
  */
 export function ThemeInitScript() {
-    const js = `(() => {
+  const js = `(() => {
     try {
       const COOKIE = "vite-ui-theme";
       // 1. Try localStorage first – instant client-side updates when the user toggles.
@@ -43,12 +43,12 @@ export function ThemeInitScript() {
       }
       meta.setAttribute("content", "light dark");
     } catch (_) { /* never block page load */ }
-  })();`
+  })();`;
 
-    // Children string executes while avoiding react/no-danger complaints.
-    return (
-        <script id="theme-init" suppressHydrationWarning>
-            {js}
-        </script>
-    )
+  // Children string executes while avoiding react/no-danger complaints.
+  return (
+    <script id="theme-init" suppressHydrationWarning>
+      {js}
+    </script>
+  );
 }
